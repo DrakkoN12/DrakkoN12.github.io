@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Prefeitura de São Sebastião do Alto</title>
+  </head>
+  <body>
+    <script>
+      function search(){
+        const url = 'https://www.google.com/search?q=site%3A+ssalto.rj.gov.br+' + '\'' + document.getElementById('search-bar').value + '\'';
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      var x = false;
+  
+      function myFunction(){
+        if(x == false){
+          document.getElementById('image-banner').src='images/licitacoes.jpg';
+          document.getElementById('image-banner-link').href='licitacoes/licitacoes.html';
+          document.getElementById('selector').innerHTML='&#9675 &#9673';
+
+          x = true;
+        }
+        else{
+          document.getElementById('image-banner').src='images/ssalto_banner.png';
+          document.getElementById('image-banner-link').href='lei-paulo-e-aldir/lei-paulo-e-aldir.html';
+          document.getElementById('image-banner-link').target='_self';
+          document.getElementById('selector').innerHTML='&#9673 &#9675';
+
+          x = false;
+        }
+      }
+    </script>
+<header>
+      <div class="cabecalho">
+        <div class="search">
+          <a href="index.html"><img class="logo" src="images/logo.png"></a>
+          <p>Prefeitura de <br>São Sebastião do Alto</p>
+          <div class="input">
+            <input type="text" id="search-bar" placeholder="Pesquisar...">
+            <input type="image" src="images/lupa.png" alt="Search" onclick="search()">
+          </div>
+        </div>
+      </div> 
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="dropbtn"><a href="index.html" style="padding: 10px;"><img src="images/Home-icon2.png" alt="Home icon"></a>
+          <li class="dropbtn"><a class="dropdown">Administração &#9660</a>
+            <ul>
+              <li><a href="secretarias-municipais/secretarias-municipais.html">Secretarias municipais</a></li>
+              <li><a href="processo-seletivo/processo-seletivo.html">Processo seletivo</a></li>
+              <li><a href="legislacao/legislacao.html">Legislação</a></li>
+            </ul>
+          </li>
+          <li class="dropbtn"><a href="municipio/municipio.html">O Município</a></li>
+          <li class="dropbtn"><a class="dropdown">Serviços &#9660</a>
+            <ul>
+              <li><a href="http://177.155.185.238:7778/cidadao/servlet/br.com.cetil.ar.jvlle.hatendimento" target="_blank">Portal de atendimento ao cidadão</a></li>
+              <li><a href="http://177.155.185.238:7777/alvaraweb" target="_blank">Alvará online</a></li>
+              <li><a href="http://177.155.185.238:7777/portalservidor#/" target="_blank">Contracheque online</a></li>
+              <li><a href="nfs-e/nfs-e.html">NFS-e</a></li>
+              <li><a href="https://www.seuiptu.com.br/" target="_blank">IPTU - 2ª via</a></li>
+              <li><a href="http://www.jucerja.rj.gov.br/tax.juntarj/ViabilidadeOpcaoV3.aspx?" target="_blank">JUCERJA regin</a></li>
+              <li><a href="https://webmail-seguro.com.br/ssalto.rj.gov.br/" target="_blank">Webmail</a></li>
+            </ul>
+          </li>
+          <li class="dropbtn"><a class="dropdown">Acesso à informação &#9660</a>
+            <ul>
+              <li><a href="http://ssalto.rj.gov.br/wp-content/uploads/2015/07/lei-municipal-de-acesso-a-informacao.pdf" target="_blank">Lei muncipal de acesso à informação</a></li>
+              <li><a href="http://177.155.185.238:7777/pronimtb/" target="_blank">Portal da transparência</a></li>
+              <li><a href="licitacoes/licitacoes.html">Licitações</a></li>
+              <li><a href="audiencias-publicas/audiencias-publicas.html">Audiências públicas</a></li>
+              <li><a href="entenda-lai/entenda-lai.html">Entenda a lai</a></li>
+              <li><a href="peca-informacao/peca-informacao.html">Peça uma informação</a></li>
+              <li><a href="recursos/recursos.html">Recursos: Passo-à-passo</a></li>
+              <li><a href="saiba-mais/saiba-mais.html">Saiba mais</a></li>
+            </ul>
+          </li>
+          <li class="dropbtn"><a href="https://falabr.cgu.gov.br/publico/RJ/saosebastiaodoalto/Manifestacao/RegistrarManifestacao" target="_blank">Fala.BR</a></li>
+        </ul>
+      </nav>
+    </header>    
+	<div class="ssalto_banner">
+      <button onclick="myFunction()" class="invis" style="float: left;">&#9664</button>
+      <a href="lei-paulo-e-aldir/lei-paulo-e-aldir.html" id="image-banner-link"><img class="image-banner" id="image-banner" src="images/ssalto_banner.png" alt="Banner"></a>
+      <p class="selector invis" id="selector">&#9673 &#9675</p>
+      <button onclick="myFunction()" class="invis" style="float: right;">&#9658</button>
+    </div>
+    <hr>
+    <div class="content" style="border-top: 5px solid #e1f2f2; border-bottom: 5px solid #e1f2f2; margin-top: 0;">
+      <div class="acesso-rapido">
+        <h1 style="margin: 0 auto 5px;">SERIÇOS E INFORMAÇÕES</h1>
+        <a href="http://177.155.185.238:7777/alvaraweb"><img src="images/licenca-export.png" style="width:50px; height:auto;"><br>ALVARÁ ONLINE</a>
+        <a href="http://177.155.185.238:7777/portalservidor#/"><img src="images/7509965-export.png" style="width:50px; height:auto;"><br>CONTRACHEQUE ONLINE</a>
+        <a href="legislacao/legislacao.html"><img src="images/7847753-export.png" style="width:50px; height:auto;"><br>LEGISLAÇÃO</a><br>
+        <a href="http://www.jucerja.rj.gov.br/tax.juntarj/ViabilidadeOpcaoV3.aspx?"><img src="images/logoJUCERA.png" style="width:50px; height:auto;"><br>JUNTA COMERCIAL RJ</a>
+        <a href="entenda-lai/entenda-lai.html"><img src="images/1076745-export.png" style="width:50px; height:auto;"><br>ENTENDA A LAI</a>
+        <a href="https://falabr.cgu.gov.br/publico/RJ/saosebastiaodoalto/Manifestacao/RegistrarManifestacao"><img src="images/fala-branco.png" style="width:50px; height:auto;"><br>OUVIDORIA</a>
+      </div>
+      <hr>
+    </div>
+    <h1 style="text-align: center;">NOTICIAS EM DESTAQUE</h1>
+    <div class="gridbox">
+      <div class="big-box" style="background-color: #e1f2f2;">
+        <img src="images/conciencia-negra.jpg" alt="Conciência negra">
+        <p>O Dia da Consciência Negra é celebrado, no Brasil, em 20 de novembro. A ocasião é dedicada à reflexão sobre a inserção do negro na sociedade brasileira.
+O Dia da Consciência Negra é considerado importante no reconhecimento dos descendentes africanos e da construção da sociedade brasileira. A data, dentre outras coisas, suscita questões sobre racismo, discriminação, igualdade social, inclusão de negros na sociedade e a cultura afro-brasileira, assim como a promoção de fóruns, debates e outras atividades que valorizam a cultura africana. ✊🏿</p>
+          
+      </div>
+      <div class="big-box" style="background-color: #d1e0e0;">
+        <img src="images/proclamacao-republica.jpg" alt="Conferência Municipal de Educação Extraordinária">
+        <p>A República do Brasil foi proclamada pelo Marechal Deodoro da Fonseca em 15 de novembro de 1889, marcando o fim da monarquia e o início do regime republicano no país.</p>
+      </div>
+	  <div class="big-box" style="background-color: #e1f2f2; margin:10px auto;">
+        <img src="images/comunicado.jpg" alt="Conciência negra">
+        <p>COMUNICAMOS A TODOS DO MUNICÍPIO DE SÃO SEBASTIÃO DO ALTO QUE, DEVIDO AO DECRETO MUNICIPAL Nº 2.494/2024, FICA CONSIDERADO PONTO FACULTATIVO NOS DIAS 18 E 19 DE NOVEMBRO.
+</p><p>INFORMAMOS AINDA QUE, NO DIA 20 DE NOVEMBRO DE 2024, SERÁ FERIADO.</p>
+          <a href="images/decreto-2494.jpg" target="_blank">Visualizar decreto</a>
+      </div>
+      <div class="big-box" style="background-color: #d1e0e0; margin:10px auto;">
+        <img src="images/37-Comunicado-2024-2048x2048.jpg" alt="Conferência Municipal de Educação Extraordinária">
+        <p>A Prefeitura de São Sebastião do Alto, por meio da Secretaria Municipal de Cultura, publicou os novos Editais destinados a Lei Aldir Blanc e Lei Paulo Gustavo no site oficial da Prefeitura Municipal</p>
+        <a href="lei-paulo-e-aldir/lei-paulo-e-aldir.html">Saiba mais</a>
+      </div>
+    </div>
+    <hr>
+    <div style="width: 100%; text-align: center; margin: 15px 0 15px;">
+      <a href="https://falabr.cgu.gov.br/publico/RJ/saosebastiaodoalto/Manifestacao/RegistrarManifestacao"><img src="images/banner-fala-br.png" style="width: 1000px;" alt="Banner Fala.br"></a>
+    </div>
+    <hr>
+    <div style="width: 100%; height: 563px; background-color: black; text-align: center; margin: 15px auto 5px; position: relative;">
+      <img src="images/ssalto3.gif" style="object-fit: cover;width: 100%; height: 563px;opacity: 50%;" alt="Tour São Sebastião do Alto">
+      <div class="ssalto-gif">
+        <div>
+          <p>São Sebastião do Alto</p>
+          <h1>Saiba mais sobre nossa cidade!</h1>
+          <a href="municipio/municipio.html">Clique aqui!</a>
+        </div>
+      </div>
+    </div>
+    <iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+  </body>
+</html>
